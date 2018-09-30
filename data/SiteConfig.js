@@ -14,7 +14,7 @@ module.exports = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "CMS", // Username to display in the author segment.
+  userName: "Christian C. Salvadó", // Username to display in the author segment.
   userTwitter: "cmsalvado", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Guatemala", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
