@@ -26,6 +26,11 @@ I also love Computer Science and related topics like automata theory, computabil
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
+      label: "StackOverflow",
+      url: "https://stackoverflow.com/users/5445/cms",
+      iconClassName: "fab fa-stack-overflow"
+    },
+    {
       label: "GitHub",
       url: "https://github.com/cms/",
       iconClassName: "fa fa-github"
