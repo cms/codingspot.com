@@ -17,7 +17,7 @@ module.exports = {
   userName: "Christian C. Salvadó", // Username to display in the author segment.
   userTwitter: "cmsalvado", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Guatemala", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userAvatar: "https://www.gravatar.com/avatar/932fb89b9d4049cec5cba357bf0ae388?size=250", // User avatar to display in the author segment.
   userDescription:
     "", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
