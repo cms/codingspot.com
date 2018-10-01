@@ -37,7 +37,7 @@ I also love Computer Science and related topics like automata theory, computabil
     },
     {
       label: "Email",
-      url: "mailto:cmsalvado@gmail.com",
+      url: "mailto:cms@codingspot.com",
       iconClassName: "fa fa-envelope"
     }
   ],
