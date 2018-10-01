@@ -96,7 +96,7 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
 };
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage, createRedirect } = actions;
 
   return new Promise((resolve, reject) => {
     const postPage = path.resolve("src/templates/post.jsx");
@@ -171,6 +171,14 @@ exports.createPages = ({ graphql, actions }) => {
             }
           });
         });
+
+
+        createRedirect({
+          fromPath: `/2010/02/answering-the-juriy-zaytsev-javascript-quiz`,
+          isPermanent: true,
+          redirectInBrowser: true,
+          toPath: `/2010-02-answering-the-juriy-zaytsev-javascript-quiz`,
+        })
       })
     );
   });
