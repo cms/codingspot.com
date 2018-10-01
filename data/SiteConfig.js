@@ -18,8 +18,11 @@ module.exports = {
   userTwitter: "cmsalvado", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Guatemala", // User location to display in the author segment.
   userAvatar: "https://www.gravatar.com/avatar/932fb89b9d4049cec5cba357bf0ae388?size=250", // User avatar to display in the author segment.
-  userDescription:
-    "", // User description to display in the author segment.
+  userDescription: `My name is Christian C. Salvadó and I am a Software Developer working and living in Guatemala, Central America.
+
+I currently work on ASP .NET C# based projects, and I personally interested in many programming paradigms, like functional programming, object oriented programming (class and prototype based), logic programming, metaprogramming (reflective and generative programming), with many languages like JavaScript, F#, Haskell, Java, and the list goes on…
+
+I also love Computer Science and related topics like automata theory, computability, computational complexity, mathematical logic, number theory, graph theory, computational geometry, algorithm analysis, data structures, parallel computing, etc, etc, etc…`, // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
