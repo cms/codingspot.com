@@ -9,7 +9,7 @@ module.exports = {
   siteDescription: "Codingspot.com blog", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  siteGATrackingID: "UA-1751228-3", // Tracking code ID for google analytics.
+  siteGATrackingID: "UA-10630631-1", // Tracking code ID for google analytics.
   disqusShortname: "cms", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
