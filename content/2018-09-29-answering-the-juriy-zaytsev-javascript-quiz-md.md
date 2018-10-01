@@ -1,7 +1,7 @@
 ---
 title: Answering the Juriy Zaytsev JavaScript Quiz
 date: 2010-02-10T03:42:00.000Z
-cover: /assets/5.jpg
+cover: /assets/2.jpg
 slug: 2010/02/answering-the-juriy-zaytsev-javascript-quiz
 category: javascript
 tags:
