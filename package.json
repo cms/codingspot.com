@@ -5,7 +5,7 @@
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "font-awesome": "^4.7.0",
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "gatsby": "2.0.0",
     "gatsby-image": "2.0.0",
     "gatsby-plugin-catch-links": "2.0.2",

@@ -33,12 +33,12 @@ I also love Computer Science and related topics like automata theory, computabil
     {
       label: "GitHub",
       url: "https://github.com/cms/",
-      iconClassName: "fa fa-github"
+      iconClassName: "fab fa-github"
     },
     {
       label: "Twitter",
       url: "https://twitter.com/cmsalvado",
-      iconClassName: "fa fa-twitter"
+      iconClassName: "fab fa-twitter"
     },
     {
       label: "Email",
