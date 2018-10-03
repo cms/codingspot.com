@@ -30,7 +30,7 @@ class Footer extends Component {
           </div>
           <div className="based-on">
             <h4>
-              Built with <i class="fab fa-js-square" title="javascript"></i><i class="fab fa-html5" title="html5"></i><i class="fab fa-react" title="react"></i>
+              Built with <i className="fab fa-js-square" title="javascript"></i> <i className="fab fa-html5" title="html5"></i> <i className="fab fa-react" title="react"></i>
             </h4>
           </div>
         </div>
