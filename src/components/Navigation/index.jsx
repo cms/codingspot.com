@@ -9,9 +9,11 @@ class Navigation extends Component {
   render() {
     const { children, config, LocalTitle } = this.props;
     const footerLinks = LocalTitle !== "About";
+    const bannerStyle = { paddingTop: '10px', paddingLeft: '10px' }
+
     return (
       <NavigationDrawer
-        drawerTitle={config.siteTitle}
+        drawerHeader={<div ><img style={bannerStyle} src={ "./logos/banner.png" } /></div>}
         toolbarTitle={LocalTitle}
         contentClassName="main-content"
         navItems={GetNavList(config)}
