@@ -13,7 +13,7 @@ class Navigation extends Component {
 
     return (
       <NavigationDrawer
-        drawerHeader={<div ><img style={bannerStyle} src={ "./logos/banner.png" } /></div>}
+        drawerHeader={<div className="siteLogo"></div>}
         toolbarTitle={LocalTitle}
         contentClassName="main-content"
         navItems={GetNavList(config)}
