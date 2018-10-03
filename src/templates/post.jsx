@@ -13,7 +13,7 @@ import SocialLinks from "../components/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
+import "prismjs/themes/prism-coy.css";
 import "./post.scss";
 
 export default class PostTemplate extends React.Component {
