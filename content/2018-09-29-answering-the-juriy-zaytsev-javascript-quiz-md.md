@@ -9,11 +9,15 @@ tags:
   - ecmascript
   - quiz
 ---
+
+# Answering the quiz
+
 Juriy Zaytsev (aka kangax) made a really nice [JavaScript quiz](http://perfectionkills.com/javascript-quiz/), which covers a lot of interesting subjects such as scoping, function expressions, variable and function declarations, references, order of evaluation, object instantiation and more.
 
 I’ve had a great time answering those questions, and I would like to share my answers with a brief explanation.
 
 ## #1
+
 ```js
     (function(){
       return typeof arguments;
@@ -23,6 +27,7 @@ I’ve had a great time answering those questions, and I would like to share my 
 It will return `"object"`, because [arguments](http://web.archive.org/web/20101109023605/http://bclary.com/2004/11/07/#a-10.1.8) is just that, a simple object.
 
 ## #2
+
 ```js
     var f = function g(){ return 23; };
     typeof g();
@@ -37,7 +42,6 @@ There are a lot of misconceptions about the differences between function express
 [Named function expressions demystified](http://perfectionkills.com/named-function-expressions-demystified/)
 
 Note: In the Microsoft JScript implementation there is a bug, a serious deviation from the ECMA specification, where identifiers of function expressions leak to its enclosing scope.
-
 
 ## #3
 
@@ -81,7 +85,6 @@ This one plays with the identifier names inside the scope of the function.
 
 The answer is `"number"`, because the `FunctionExpression` Identifier (the function name) is bound to the scope chain, but later is overwritten by the value of the f argument.
 
-
 ## #6
 
 ```js
@@ -107,7 +110,6 @@ obj['method']();
 ```
 
 In this question the `[]` property accessor is used on the arguments object, causing the context change, we are executing the foo.bar function as if it were a "method" of the arguments object.
-
 
 ## #7
 
@@ -167,8 +169,6 @@ The following can help to realize it:
 
 Note: In JScript implementations due the [bug](https://groups.google.com/forum/#!msg/comp.lang.javascript/qt_UPJW6wcg/6LwEsAOLUFsJ) I mentioned early, the result of this code will be "1function" which is not correct.
 
-
-
 ## #10
 
 ```js
@@ -179,7 +179,6 @@ Note: In JScript implementations due the [bug](https://groups.google.com/forum/#
 The answer is `"string"`.
 
 The first statement is just trying to confuse you, because as you know, the `typeof` operator will return always a `String` value, so you can figure out why `typeof typeof anything;` will return always "string" also.
-
 
 ## #11
 
@@ -193,7 +192,6 @@ The answer is `"undefined"`, because as the foo argument, we are passing this ob
 
 `foo.bar` doesn't exist, the bar property is actually accessible by `foo.foo.bar`.
 
-
 ## #12
 
 ```js
@@ -205,7 +203,6 @@ The answer is `"undefined"`, because as the foo argument, we are passing this ob
 ```
 
 The answer is `2`, because [Function Declarations](http://web.archive.org/web/20101109023605/http://bclary.com/2004/11/07/#a-13) are "hoisted" at parse time, the second `f` function will replace the first one, even if the second is defined after the `return` statement.
-
 
 ## #13
 
@@ -224,7 +221,6 @@ So basically, f is not an instance of f, since:
 
 We can check that behavior by looking how the [[[Construct]]](http://web.archive.org/web/20101109023605/http://bclary.com/2004/11/07/#a-13.2.2) internal operation works.
 
-
 ## #14
 
 ```js
@@ -235,4 +231,4 @@ The answer is `2`, because the `with` statement augments the scope chain with th
 
 The length property of functions objects contains the number of expected arguments, in this case two arguments.
 
-Note: `undefined` has no special meaning, is just another identifier, in this example is used as an argument in the `FormalParameterList`. 
+Note: `undefined` has no special meaning, is just another identifier, in this example is used as an argument in the `FormalParameterList`.
