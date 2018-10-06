@@ -1,8 +1,8 @@
 ---
-title: Loop through an array in JavaScript
-
+title: Loop through an array in Javascript
 date: 2018-10-05T05:42:00.000Z
 cover: /assets/8.jpg
+slug: loop-through-an-array-in-javascript
 category: javascript
 tags:
 - javascript
