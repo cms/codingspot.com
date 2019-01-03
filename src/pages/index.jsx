@@ -5,6 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
+import MailingList from "../components/MailingList/index";
 
 class Index extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class Index extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
           <SEO postEdges={postEdges} />
+          <MailingList />
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
